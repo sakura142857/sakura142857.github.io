@@ -1,0 +1,59 @@
+baseURL = 'https://sakura142857.github.io/'
+languageCode = 'zh-cn'
+title = '⚡HOMME BLOG⚡'
+theme = "FixIt"
+
+[params]
+  [params.footer]
+    enable = true
+    copyright = true
+    since = 2022
+    icp = ""
+    
+  # User Profile (matches Image 2 center part)
+  [params.home.profile]
+    enable = true
+    gravatarEmail = "18654779330@163.com" # 或者在下面链接到您的头像图片
+    avatarURL = "/images/avatar.png" # 将您的头像图片放在 static/images/ 文件夹中
+    title = "HOMME" # 您的姓名
+    subtitle = "我们终将结束溃烂的日子，接着一起奔向阳光万里" # 图片中的引言
+    typeit = false 
+    social = true # 启用社交媒体图标
+
+  # Social Icons (GitHub, Bilibili etc.)
+  [params.social]
+    github = "sakura142857"
+    bilibili = "-泪染青衿-"
+    email = "18654779330@163.com"
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "合集"
+    url = "/posts/"
+    weight = 1
+  [[menu.main]]
+    identifier = "archives"
+    name = "归档"
+    url = "/archives/"
+    weight = 2
+  [[menu.main]]
+    identifier = "categories"
+    name = "分类"
+    url = "/categories/"
+    weight = 3
+  [[menu.main]]
+    identifier = "tags"
+    name = "标签"
+    url = "/tags/"
+    weight = 4
+  [[menu.main]]
+    identifier = "friends"
+    name = "友链"
+    url = "/friends/"
+    weight = 5
+  [[menu.main]]
+    identifier = "about"
+    name = "关于"
+    url = "/about/"
+    weight = 6
