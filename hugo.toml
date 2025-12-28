@@ -7,7 +7,7 @@ theme = "FixIt"
   [params.footer]
     enable = true
     copyright = true
-    since = 2022
+    since = 2024
     icp = ""
     
   # User Profile (matches Image 2 center part)
@@ -22,8 +22,8 @@ theme = "FixIt"
 
   # Social Icons (GitHub, Bilibili etc.)
   [params.social]
-    github = "sakura142857"
-    bilibili = "-泪染青衿-"
+    github = "https://github.com/sakura142857/"
+    bilibili = "https://space.bilibili.com/3546783351310903"
     email = "18654779330@163.com"
 
 [menu]
@@ -50,7 +50,7 @@ theme = "FixIt"
   [[menu.main]]
     identifier = "friends"
     name = "友链"
-    url = "/friends/"
+    url = "https://ddmaster2608.github.io/"
     weight = 5
   [[menu.main]]
     identifier = "about"
