@@ -2,7 +2,11 @@ name: Deploy Hugo to GitHub Pages
 
 on:
   push:
-    branches: [ main ]
+    branches: ["main"]
+
+# ✅ 新增：给机器人赋予写权限，解决 403 报错
+permissions:
+  contents: write
 
 jobs:
   build:
@@ -11,11 +15,14 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          submodules: true  # ✅ 确保下载主题文件
+          fetch-depth: 0
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: '0.111.3'  # 推荐使用较新版本
+          hugo-version: 'latest'
           extended: true
 
       - name: Build
@@ -24,6 +31,5 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          branch: main
+          branch: gh-pages  # ✅ 修改：部署到 gh-pages 分支，不要覆盖 main！
           folder: public
-          force: true  # ✅ 关键：强制覆盖远程内容
