@@ -22,8 +22,8 @@ theme = "FixIt"
 
   # Social Icons (GitHub, Bilibili etc.)
   [params.social]
-    github = "https://github.com/sakura142857/"
-    bilibili = "https://space.bilibili.com/3546783351310903"
+    github = "sakura142857"
+    bilibili = "3546783351310903"
     email = "18654779330@163.com"
 
 [menu]
